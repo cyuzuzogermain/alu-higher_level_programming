@@ -15,4 +15,7 @@ class Square:
         It is used to show basic class structure in Python without functionality.
         """
         def __init__(self, size):
-            __size = size
+            """
+            initiate a square instance
+            """
+            self.__size = size
