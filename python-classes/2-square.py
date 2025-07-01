@@ -24,9 +24,17 @@ class Square:
         size: The size of the square (no validation).   
         """
         self.__size = size
+        """
+        Initializing a try that check if the size is a number and also
+        greater or equal to 0
+        """
         try:
             if isinstance(self.__size, int) and self.__size > 0:
                 continue
+        """
+        throwing explained exceptions to the user in case the above conditions 
+        return errors
+        """
         except TypeError:
             print("size must be an integer")
         except ValueError:
