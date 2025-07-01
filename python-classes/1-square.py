@@ -1,5 +1,18 @@
 #!/usr/bin/python3
+"""
+Module: square
+
+This module defines a basic Square class.
+It currently contains no attributes or methods.
+Used for demonstrating class creation and object inspection.
+"""
+
 
 class Square:
-    def __init__(self, size):
-        __size = size
+        """
+        Represents a square.
+        This is an empty class definition for a square.
+        It is used to show basic class structure in Python without functionality.
+        """
+        def __init__(self, size):
+            __size = size
