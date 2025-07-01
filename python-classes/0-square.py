@@ -1,19 +1,19 @@
 #!/usr/bin/python3
-
 """
-Module: shapes
+Module: square
 
-This module defines geometric shape classes.
-Currently, it includes an empty Square class for future implementation.
+This module defines a basic Square class.
+It currently contains no attributes or methods.
+Used for demonstrating class creation and object inspection.
 """
+
 
 class Square:
         """
-            A class to represent a square.
+            Represents a square.
 
-                This is an empty class intended as a placeholder for future development.
-                    Methods and attributes such as side length, area calculation,
-                        or perimeter will be added later.
-                            """
-                                pass
-                            
+                This is an empty class definition for a square.
+                    It is used to show basic class structure in Python without functionality.
+                        """
+                            pass
+
