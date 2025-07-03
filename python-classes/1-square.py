@@ -8,6 +8,8 @@ This module defines a basic Square class.
 It currently contains no attributes or methods.
 Used for demonstrating class creation and object inspection.
 """
+
+
 class Square:
         """
         Represents a square.
@@ -15,6 +17,7 @@ class Square:
         It is used to show basic class structure in 
         Python without functionality.
         """
+
         def __init__(self, size):
             """
             initiate a square instance
