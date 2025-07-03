@@ -1,4 +1,6 @@
 #!/usr/bin/python3
+
+
 """
 Module: square
 
@@ -6,8 +8,6 @@ This module defines a basic Square class.
 It currently contains no attributes or methods.
 Used for demonstrating class creation and object inspection.
 """
-
-
 class Square:
         """
         Represents a square.
