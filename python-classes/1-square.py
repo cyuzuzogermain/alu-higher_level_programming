@@ -12,7 +12,8 @@ class Square:
         """
         Represents a square.
         This is an empty class definition for a square.
-        It is used to show basic class structure in Python without functionality.
+        It is used to show basic class structure in 
+        Python without functionality.
         """
         def __init__(self, size):
             """
