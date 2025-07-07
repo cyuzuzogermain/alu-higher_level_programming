@@ -2,7 +2,8 @@
 """
 Module: rectangle
 
-This module defines a Rectangle class that supports width and height attributes,
+This module defines a Rectangle class that supports
+width and height attributes,
 calculates area and perimeter, and can be printed using '#' characters.
 """
 
@@ -104,10 +105,12 @@ class Rectangle:
 
     def __str__(self):
         """
-        Returns a string representation of the rectangle using '#' characters.
+        Returns a string representation of the
+        rectangle using '#' characters.
 
         Returns:
-            str: The rectangle drawn with '#' or an empty string if width or height is 0.
+            str: The rectangle drawn with '#' or an empty
+            string if width or height is 0.
         """
         if self.__width == 0 or self.__height == 0:
             return ""
