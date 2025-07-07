@@ -25,7 +25,8 @@ class Square:
 
         Args:
             size (int, optional): The size of the square's side. Defaults to 0.
-            position (tuple, optional): The position (x, y) offset. Defaults to (0, 0).
+            position (tuple, optional): The position (x, y)
+            offset. Defaults to (0, 0).
 
         Raises:
             TypeError: If size is not an integer or position is not a
