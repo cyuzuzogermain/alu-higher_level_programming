@@ -2,7 +2,8 @@
 """
 Module: square
 
-This module defines a Square class that represents a square with size and position.
+This module defines a Square class that represents a
+square with size and position.
 Includes size and position validation, area calculation,
 and visual printing with positioning.
 """
@@ -103,7 +104,8 @@ class Square:
 
     def my_print(self):
         """
-        Prints the square using '#' character, taking into account the position.
+        Prints the square using '#' character, taking into
+        account the position.
 
         If size is 0, prints an empty line.
         """
