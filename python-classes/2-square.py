@@ -3,7 +3,8 @@
 Module: square
 
 This module defines a class Square that represents a geometric square.
-It includes input validation to ensure the size attribute is a non-negative integer.
+It includes input validation to ensure the size
+attribute is a non-negative integer.
 """
 
 
@@ -12,7 +13,8 @@ class Square:
     Represents a square.
 
     Attributes:
-        __size (int): The length of one side of the square. Must be a non-negative integer.
+        __size (int): The length of one side of the square.
+        Must be a non-negative integer.
     """
 
     def __init__(self, size=0):
