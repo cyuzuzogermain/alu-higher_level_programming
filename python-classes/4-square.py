@@ -3,7 +3,8 @@
 Module: square
 
 This module defines a Square class that encapsulates the concept of a square.
-It includes size validation, property getters and setters, and a method to compute the area.
+It includes size validation, property getters and setters,
+and a method to compute the area.
 """
 
 
