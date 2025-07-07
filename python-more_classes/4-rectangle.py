@@ -109,7 +109,8 @@ class Rectangle:
         using '#' characters.
 
         Returns:
-            str: The printed rectangle or an empty string if width or height is 0.
+            str: The printed rectangle or an empty string if
+            width or height is 0.
         """
         if self.__width == 0 or self.__height == 0:
             return ""
