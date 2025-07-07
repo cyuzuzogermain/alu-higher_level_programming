@@ -131,4 +131,3 @@ class Rectangle:
         Prints a message indicating the rectangle is being deleted.
         """
         print("Bye rectangle...")
-
