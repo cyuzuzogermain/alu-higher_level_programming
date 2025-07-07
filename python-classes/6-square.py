@@ -3,7 +3,8 @@
 Module: square
 
 This module defines a Square class that represents a square with size and position.
-Includes size and position validation, area calculation, and visual printing with positioning.
+Includes size and position validation, area calculation,
+and visual printing with positioning.
 """
 
 
@@ -13,7 +14,8 @@ class Square:
 
     Attributes:
         __size (int): The length of a side of the square.
-        __position (tuple): Tuple of 2 positive integers representing position (horizontal, vertical).
+        __position (tuple): Tuple of 2 positive integers
+        representing position (horizontal, vertical).
     """
 
     def __init__(self, size=0, position=(0, 0)):
@@ -25,7 +27,8 @@ class Square:
             position (tuple, optional): The position (x, y) offset. Defaults to (0, 0).
 
         Raises:
-            TypeError: If size is not an integer or position is not a tuple of 2 positive integers.
+            TypeError: If size is not an integer or position is not a
+            tuple of 2 positive integers.
             ValueError: If size is less than 0.
         """
         self.size = size
