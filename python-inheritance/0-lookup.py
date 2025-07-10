@@ -10,4 +10,4 @@ def lookup(obj):
     """
     function body block
     """
-    return obj
+    return dir(obj)
