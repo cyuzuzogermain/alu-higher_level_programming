@@ -1,13 +1,7 @@
 #!/usr/bin/python3
-
-"""
-A function that return the list of available
-attrubutes and methods of an object
-"""
+"""Module with a func that returns attrs and mthds of an object:."""
 
 
 def lookup(obj):
-    """
-    function body block
-    """
-    return dir(obj)
+    """Return a list of avail attrs nd mtds."""
+    return (dir(obj))
