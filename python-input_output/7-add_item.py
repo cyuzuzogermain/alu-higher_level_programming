@@ -1,4 +1,6 @@
 #!/usr/bin/python3
+
+""" Modules that will be ued """
 import sys      # For accessing command-line arguments
 import json     # For JSON file handling
 import os       # For checking if the file exists
