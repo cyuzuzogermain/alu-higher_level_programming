@@ -36,11 +36,7 @@ class Student:
         Returns:
             dict: Dictionary of selected attributes.
         """
-        if isinstance(attrs, list) and all(isinstance(attr, str) for attr in attrs):
-            filtered_dict = {}
-            for attr in attrs:
-                if hasattr(self, attr):
-                    filtered_dict[attr] = getattr(self, attr)
-            return filtered_dict
-        else:
-            return self.__dict__.copy()
+        if (isinstance(attrs, list) and
+                all(type(a) == str for a in attrs)):
+            return {a: getattr(self, a) for a in attrs if hasattr(self, a)}
+        return self.__dict__.copy()
