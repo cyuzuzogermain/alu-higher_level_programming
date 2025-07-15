@@ -17,6 +17,7 @@ def load_from_json_file(filename):
 if __name__ == "__main__":
     filename = "add_item.json"
 
+    """ main program """
     # Load existing list if file exists, else start with an empty list
     if os.path.exists(filename):
         data = load_from_json_file(filename)
