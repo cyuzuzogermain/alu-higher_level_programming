@@ -5,6 +5,7 @@ A function to read files and print them to
 stdout
 """
 
+
 def read_file(filename=""):
     """
     The function block
