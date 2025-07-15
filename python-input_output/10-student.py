@@ -36,7 +36,7 @@ class Student:
         Returns:
             dict: Dictionary of selected attributes.
         """
-        if isinstance(attrs, list) and all(type(attr) == str for attr in attrs):
+        if isinstance(attrs, list) and all(isinstance(attr, str) for attr in attrs):
             filtered_dict = {}
             for attr in attrs:
                 if hasattr(self, attr):
