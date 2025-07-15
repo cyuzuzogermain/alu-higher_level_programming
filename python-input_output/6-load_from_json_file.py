@@ -12,7 +12,8 @@ def load_from_json_file(filename):
         filename: The name of the JSON file to read from.
 
     Returns:
-        A Python object (e.g., dict, list) reconstructed from the JSON file content.
+        A Python object (e.g., dict, list) reconstructed
+        from the JSON file content.
     """
     with open(filename, "r", encoding="utf-8") as f:
         return json.load(f)
