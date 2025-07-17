@@ -1,4 +1,2 @@
---Query to display all the databases
-import mysql.connector
-
+-- Query to display all the databases
 SHOW DATABASES;
