@@ -1,3 +1,3 @@
 #!/bin/bash
-# Print size of response body in bytes from given URL using curl
-curl -s -L -o /dev/null -w '%{size_download}\n' "$1"
+# Fetch the response body from the URL using curl and print it
+curl -s "$1"
