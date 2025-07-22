@@ -1,3 +1,3 @@
 #!/bin/bash
-# Script that takes in a URL and displays the size in bytes of a 200 OK response body
-curl -sL -w "%{http_code}" "$1" -o body.tmp | grep -q 200 && wc -c < body.tmp || echo 0
+# Sends a request to a URL and displays the size of the response body in bytes
+curl -s "$1" | wc -c
