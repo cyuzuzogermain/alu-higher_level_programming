@@ -1,3 +1,3 @@
 #!/bin/bash
-# Send GET request and print body only if status is 200
-curl -s -w "%{http_code}" -o /tmp/resp_body "$1" | grep -q "^200$" && cat /tmp/resp_body
+# Bash script that takes in a URL, sends a GET request to the URL, and displays the body of the response
+curl -sfL "$1" -X GET
