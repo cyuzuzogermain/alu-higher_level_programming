@@ -1,3 +1,3 @@
 #!/bin/bash
-# Sends an OPTIONS request and extracts the Allow header
-curl -sI -X OPTIONS "$1" | grep -i ^Allow:
+# Bash script that takes in a URL and displays all HTTP methods the server will accept.
+curl -sI -X OPTIONS "$1" | grep "Allow:" | cut -d " " -f 2-
