@@ -1,23 +1,17 @@
 #!/usr/bin/python3
 """
-Fetch and display the body of a response from a given URL.
-
-If an HTTPError occurs, prints: Error code: <HTTP status code>
-
-Usage:
-    python3 fetch_url.py <URL>
+Python script that takes in a URL, sends a request and displays
+the value of the X-Request-Id variable found in the header
+(handling HTTP errors)
 """
-
-import sys
 from urllib import request, error
+import sys
 
-url = sys.argv[1]
 
-try:
-    # Send the request and read the response using a with-statement
-    with request.urlopen(url) as response:
-        print(response.read().decode('utf-8'))
-
-except error.HTTPError as e:
-    # Print error code if an HTTPError is raised
-    print("Error code:", e.code)
+if __name__ == "__main__":
+    try:
+        with request.urlopen(sys.argv[1]) as response:
+            body = response.read()
+            print(body.decode('utf-8'))
+    except error.HTTPError as err:
+        print('Error code: {}'.format(err.code))
