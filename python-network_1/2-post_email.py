@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """
-A Python script that sends a POST request to a given URL with an email as a parameter
+A Python script that sends a POST request to a
+given URL with an email as a parameter
 and prints the response body decoded in UTF-8.
 
 Requirements:
