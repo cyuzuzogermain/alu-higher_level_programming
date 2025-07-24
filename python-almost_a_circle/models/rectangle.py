@@ -88,5 +88,5 @@ class Rectangle(Base):
 
         Returns:
             int: The area (width * height).
-        """ 
+        """
         return self.width * self.height
