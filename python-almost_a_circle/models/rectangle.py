@@ -90,3 +90,12 @@ class Rectangle(Base):
             int: The area (width * height).
         """
         return self.width * self.height
+        def display(self):
+        """
+        Prints the rectangle using '#' characters.
+
+        The number of lines printed equals height,
+        and the number of '#' per line equals width.
+        """
+        for _ in range(self.height):
+            print("#" * self.width)
