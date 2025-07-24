@@ -10,22 +10,21 @@ Requirements:
 """
 
 import sys
-from urllib import request, parse
+import urllib.parse
+import urllib.request
 
-"""
-Module
-"""
-# Get the URL and email from the command-line arguments
-url = sys.argv[1]
-email = sys.argv[2]
+# Check if the script is being run as the main program
+if __name__ == "__main__":
+    # Retrieve the URL and email from command-line arguments
+    url = sys.argv[1]  # The first argument is the URL
+    email = sys.argv[2]  # The second argument is the email
 
-# Encode the data with the email as the only POST variable
-post_data = parse.urlencode({'email': email}).encode('utf-8')
+    # Encode the email as a URL parameter
+    data = urllib.parse.urlencode({'email': email}).encode('utf-8')
 
-# Create a Request object with the URL and encoded data
-req = request.Request(url, data=post_data)
-
-# Send the request and read the response using a 'with' statement
-with request.urlopen(req) as response:
-    # Decode and print the response body as UTF-8
-    print(response.read().decode('utf-8'))
+    # Use 'with' statement to ensure proper resource management
+    with urllib.request.urlopen(url, data) as response:
+        # Read the response body and decode it in UTF-8
+        body = response.read().decode('utf-8')
+        # Print the decoded response body to the console
+        print(body)
