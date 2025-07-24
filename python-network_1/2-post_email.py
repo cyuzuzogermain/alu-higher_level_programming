@@ -12,6 +12,9 @@ Requirements:
 import sys
 from urllib import request, parse
 
+"""
+Module
+"""
 # Get the URL and email from the command-line arguments
 url = sys.argv[1]
 email = sys.argv[2]
