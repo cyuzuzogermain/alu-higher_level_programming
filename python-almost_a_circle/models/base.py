@@ -4,6 +4,7 @@ Base module: contains the Base class which will be the foundation
 for all other classes in this project.
 """
 
+
 class Base:
     """The Base class to manage `id` attribute for all future classes."""
 
@@ -14,7 +15,8 @@ class Base:
         Initialize the base instance.
 
         Args:
-            id (int, optional): The id to assign. If None, auto-increment is used.
+            id (int, optional): The id to assign.
+            If None, auto-increment is used.
         """
         if id is not None:
             self.id = id
