@@ -16,9 +16,9 @@ class Rectangle(Base):
         Args:
             width (int): Width of the rectangle.
             height (int): Height of the rectangle.
-            x (int): Horizontal offset.
-            y (int): Vertical offset.
-            id (int): Optional ID passed to the Base class.
+            x (int): Horizontal position (must be >= 0).
+            y (int): Vertical position (must be >= 0).
+            id (int): Optional ID inherited from Base.
         """
         super().__init__(id)
         self.width = width
@@ -26,9 +26,6 @@ class Rectangle(Base):
         self.x = x
         self.y = y
 
-    # -------------------------
-    # width
-    # -------------------------
     @property
     def width(self):
         """Getter for width."""
@@ -43,9 +40,6 @@ class Rectangle(Base):
             raise ValueError("width must be > 0")
         self.__width = value
 
-    # -------------------------
-    # height
-    # -------------------------
     @property
     def height(self):
         """Getter for height."""
@@ -60,9 +54,6 @@ class Rectangle(Base):
             raise ValueError("height must be > 0")
         self.__height = value
 
-    # -------------------------
-    # x
-    # -------------------------
     @property
     def x(self):
         """Getter for x."""
@@ -77,9 +68,6 @@ class Rectangle(Base):
             raise ValueError("x must be >= 0")
         self.__x = value
 
-    # -------------------------
-    # y
-    # -------------------------
     @property
     def y(self):
         """Getter for y."""
